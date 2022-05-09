@@ -10,7 +10,7 @@
 ## 10.6.4
 
 ```bash
-cat /etc/group	|	paste /etc/passwd /etc/shadow -	|	head -n 3
+cat /etc/group	|	paste /etc/passwd /etc/shadow -	|	 head -n 3
 ```
 > '-' = /etc/group 
 -------
