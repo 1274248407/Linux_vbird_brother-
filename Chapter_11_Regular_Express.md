@@ -17,7 +17,7 @@ sed -i 's/\.$/\!\g' "Edit.DOS.format"
 	result: "Edit.^M$"		nothing change
 
 correct: sed -i 's/\..$/\!\g' "Edit.Unix.format"
-'/..$' divied below:
+'/..$' divide below:
 	Text: '\.' = '.'
 	'.': match any character (expect for line terminators)
 	$: asserts position at the end of a line
@@ -34,7 +34,7 @@ cat pay.txt |
  > NR>=2{total = $2 + $3 + $4; \
  > printf "%10s %10d %10d %10d %10.2f\n", $1, $2, $3, $4, total}'
 ```
-**total = $2 + $3 + $4; same as c **. add ';'
+**total = $2 + $3 + $4; same as C language. add ';'**
 
  
 
