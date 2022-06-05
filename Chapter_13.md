@@ -20,3 +20,13 @@
 - **:99999:** password expire time
 
 - **:7:** will be warning days before password expire time
+# 13.3.2 ACL Setting Tips: getfacl, setfacl
+for valid permissions: 『 m: permissions 』:
+
+**mask** : the permissions set by the user or group must exist within the permission setting range of the mask to take effect, which is 'effective permission'.
+
+example:
+
+    mask:[r]
+    user:[rx] ; effective: r
+    group:[rx] ; effective: r
